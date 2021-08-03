@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SNu-d8-qRo">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GE_SS_Two_Medium.otf">
+            <string>GESSTwoMedium-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Making Videos-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ContentMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmS-tW-F4p">
+                                <rect key="frame" x="252" y="290" width="119" height="87"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="atD-Jg-iZT"/>
+                                    <constraint firstAttribute="width" constant="119" id="kGR-Ln-pCH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="26"/>
+                                <state key="normal" title="الشعار">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="waterMarkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lgk-Ud-XL9"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWz-yV-DO8">
+                                <rect key="frame" x="0.0" y="54" width="414" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGL-pm-ZJX">
+                                <rect key="frame" x="44" y="290" width="119" height="87"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="GNU-BQ-UWp"/>
+                                    <constraint firstAttribute="width" constant="119" id="MCz-gd-6dY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="26"/>
+                                <state key="normal" title="العنوان">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="titleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xyj-wS-gfL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Luw-bO-dMV">
+                                <rect key="frame" x="65" y="392" width="284" height="40"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="26"/>
+                                <state key="normal" title="تحميل البداية">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startingVid:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FGN-gU-7Ck"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEu-EW-eC3">
+                                <rect key="frame" x="65" y="452" width="284" height="40"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="26"/>
+                                <state key="normal" title="فيديو الشرح">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="contentVidButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7HX-DJ-mxv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxy-mK-Ik2">
+                                <rect key="frame" x="65" y="512" width="284" height="40"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="26"/>
+                                <state key="normal" title="فيديو النهاية">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="endingVid:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hbK-8Y-p76"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="St2-CW-GpQ">
+                                <rect key="frame" x="20" y="645" width="374" height="71"/>
+                                <color key="backgroundColor" red="0.41176470588235292" green="0.60784313725490191" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="jrs-Jc-YV8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="26"/>
+                                <state key="normal" title="دمج المحتوى">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="MergingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SLQ-xP-Kpo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sxy-mK-Ik2" firstAttribute="top" secondItem="hEu-EW-eC3" secondAttribute="bottom" constant="20" id="4Pb-ah-z11"/>
+                            <constraint firstItem="YmS-tW-F4p" firstAttribute="top" secondItem="nWz-yV-DO8" secondAttribute="bottom" constant="20" id="5mM-4S-S4u"/>
+                            <constraint firstItem="hEu-EW-eC3" firstAttribute="top" secondItem="Luw-bO-dMV" secondAttribute="bottom" constant="20" id="A8d-Hg-uDg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hEu-EW-eC3" secondAttribute="trailing" constant="65" id="Br7-kd-GAm"/>
+                            <constraint firstItem="Luw-bO-dMV" firstAttribute="top" secondItem="YmS-tW-F4p" secondAttribute="bottom" constant="15" id="C0g-dO-Vkz"/>
+                            <constraint firstItem="aGL-pm-ZJX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="CCo-5f-lKO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sxy-mK-Ik2" secondAttribute="trailing" constant="65" id="DN2-eC-18g"/>
+                            <constraint firstItem="hEu-EW-eC3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="FAt-pp-Ayo"/>
+                            <constraint firstItem="nWz-yV-DO8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KR5-Xi-btn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YmS-tW-F4p" secondAttribute="trailing" constant="43" id="MDG-3G-yFU"/>
+                            <constraint firstItem="nWz-yV-DO8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Qhv-6c-QOn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="St2-CW-GpQ" secondAttribute="trailing" constant="20" id="YrJ-cM-Vos"/>
+                            <constraint firstItem="nWz-yV-DO8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="aLe-Eh-elP"/>
+                            <constraint firstItem="St2-CW-GpQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cUz-Ku-eni"/>
+                            <constraint firstItem="sxy-mK-Ik2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="d0Q-su-Iml"/>
+                            <constraint firstItem="Luw-bO-dMV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="dqA-zA-IAd"/>
+                            <constraint firstItem="aGL-pm-ZJX" firstAttribute="top" secondItem="nWz-yV-DO8" secondAttribute="bottom" constant="20" id="q0q-XJ-yvS"/>
+                            <constraint firstItem="nWz-yV-DO8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qJ0-fr-QZL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="St2-CW-GpQ" secondAttribute="bottom" constant="20" id="sp3-z1-IVH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Luw-bO-dMV" secondAttribute="trailing" constant="65" id="uZE-a2-nJO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Making Videos" id="zHq-Fz-OSU"/>
+                    <connections>
+                        <outlet property="begVid" destination="Luw-bO-dMV" id="MpN-Vd-dZf"/>
+                        <outlet property="endingVid" destination="hEu-EW-eC3" id="FQ9-DI-pTJ"/>
+                        <outlet property="mergingOutlit" destination="St2-CW-GpQ" id="uzL-wK-Tb2"/>
+                        <outlet property="pickerView" destination="nWz-yV-DO8" id="akd-nB-FKB"/>
+                        <outlet property="realEnding" destination="sxy-mK-Ik2" id="V2Q-Ec-3cp"/>
+                        <outlet property="titleVid" destination="aGL-pm-ZJX" id="3e0-ZI-UNc"/>
+                        <outlet property="waterMark" destination="YmS-tW-F4p" id="9CO-Me-Ueh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="45u-aZ-osD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SNu-d8-qRo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GET-iH-8dk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.29411764705882354" green="0.53725490196078429" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Sfn-hX-3uc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rnc-Lp-ZNS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
